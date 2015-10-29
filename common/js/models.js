@@ -80,8 +80,8 @@ module.exports = {
    isImageDynamic:Number,		// 是否是动态图产品
    productPrice:String,			// 单品产品的价格。
    promiseTemplateId:String,		// 产品所关联的服务模版
-   sizechartId:String			// 产品所关联的尺码模版ID
-   //test git
+   sizechartId:String,			// 产品所关联的尺码模版ID
+   aa:String
  }
 
   
