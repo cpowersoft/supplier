@@ -81,7 +81,8 @@ module.exports = {
    productPrice:String,			// 单品产品的价格。
    promiseTemplateId:String,		// 产品所关联的服务模版
    sizechartId:String,			// 产品所关联的尺码模版ID
-   aa:String
+   aa:String,
+   bb:Number      //test2
  }
 
   
