@@ -14,7 +14,7 @@ module.exports = function (app) {
     	         
     app.post('/adds/:db/:table', supplier.add);  /* 添加分类  */
 
-    app.get('/selects/:db/:table', supplier.select);  /* 查询分类  */
+    app.get('/selects/:db/:table/:cid/:limit', supplier.select);  /* 查询分类  */
 
     app.post('/productAdd/:db/:table', supplier.add);   /* 上传产品 */ 
 	
