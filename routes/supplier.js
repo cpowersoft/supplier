@@ -31,7 +31,7 @@ exports.select = function (req, res) {
    var dbconn = mongoose.connect('mongodb://127.0.0.1:27017/'+req.params.db);
      var database = global.dbHelper.getModel(req.params.table);
         
-        database.find({},function(err, docs){
+        database.find({category_id:req.params.cid},function(err, docs){
             if (err) {
                 return res.json({err:err});
             }
@@ -41,7 +41,7 @@ exports.select = function (req, res) {
 	    var str = JSON.stringify(rs)              
             res.send(str);
 	    mongoose.connection.close();      
-        });
+        }).limit(req.params.limit);
 
 }
 
